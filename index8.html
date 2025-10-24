@@ -1,0 +1,172 @@
+<html></html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starcars.ua</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+    header {
+      background: linear-gradient(135deg, #1f1f1f, #3d3d3d);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      letter-spacing: 2px;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      color: white;
+    }
+    .banner {
+      position: relative;
+      overflow: hidden;
+      height: 400px;
+    }
+    .banner img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+    .banner .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .content {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .cars-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .car-card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .car-card:hover {
+      transform: translateY(-5px);
+    }
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .car-card .info {
+      padding: 15px;
+    }
+    .car-card .info h3 {
+      margin: 0 0 10px 0;
+    }
+    .car-card .info p {
+      margin: 0;
+      font-size: 0.95em;
+      color: #666;
+    }
+    footer {
+      background-color: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Starcars.ua</h1>
+    <nav>
+      <a href="#">Головна</a>
+      <a href="#about">Про нас</a>
+      <a href="#cars">Автомобілі</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <img src="https://cdn.vectorstock.com/i/preview-1x/38/77/golden-luxury-car-logo-sign-vector-41833877.jpg" alt="Banner Car">
+    <div class="overlay-text">Власний світ авто в одному місці</div>
+  </section>
+
+  <div class="content" id="about">
+    <h2>Про нас</h2>
+    <p>
+      Ласкаво просимо до Starcars.ua — місце, де кожен автомобіль розповідає свою історію.
+      Тут ви знайдете огляди, фото та цікаві факти про найкрутіші моделі машин.
+    </p>
+  </div>
+
+  <div class="content" id="cars">
+    <h2>Наші автомобілі</h2>
+    <div class="cars-list">
+      <div class="car-card">
+        <img src="https://images.caricos.com/b/bmw/2018_bmw_m5/images/2560x1440/2018_bmw_m5_172_2560x1440.jpg" alt="Car 1">
+        <div class="info">
+          <h3>BMW M5</h3>
+          <p>Спортивний седан з потужним двигуном та елегантним дизайном.</p>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="https://cdn.carsbite.com/articles/10709_2021-mercedes-benz-s-class-sedan-exterior19.jpg" alt="Car 2">
+        <div class="info">
+          <h3>Mercedes–Benz S-Class</h3>
+          <p>Розкішний седан з першокласним комфортом та технологіями.</p>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="https://audi.autoua.net/media/catalog/0/9/p1754309-1479996211.jpg" alt="Car 3">
+        <div class="info">
+          <h3>Audi R8</h3>
+          <p>Суперкар з агресивним стилем і динамічними характеристиками.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content" id="contact">
+    <h2>Контакти</h2>
+    <p>Електронна пошта: Nazaruk@starcars.ua</p>
+    <p>Телефон: +38 (098) 989‑37‑66</p>
+    <p>Знаходимось: м.Старокостянтинів Хмельницька обл.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Starcars.ua | Розроблено з любов’ю до авто
+  </footer>
+</body>
+</html>
